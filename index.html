@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/a4c00a89bc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="logo_container">
+            <img src="/assests/logo.png" alt="" />
+            <h3>TOI</h3>
+        </div>
+
+        <div class="search">
+            <input id="search_input" type="text" placeholder="Enter Location" />
+            <button class="search_button">Search</button>
+        </div>
+
+        <div class="info">
+            <ul class="nav-ul">
+                <li>Home</li>
+                <li>News Room</li>
+                <li>Weather API</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--header-->
+
+    <div class="header">
+        <ul class="nav-ul">
+            <li>Today</li>
+            <li id="change_tab">5 Days Forecast</li>
+
+        </ul>
+    </div>
+
+    <!--Forecast-->
+    <div class="main">
+        <div class="forecast">
+
+            <div class="one">
+                <h2 class="place"><span>Teen Murti Marg Area, Delhi </span></h2>
+                <h1 class="temp" id="temperature">34°</h1>
+                <h2 class="weather_desc">Haze</h2>
+                <h2>Day <span id="day_temp">37°</span> • Night <span id="night_temp">24° </span></h2>
+
+                <img id="weather_icon" style="width: 180px;" src="" alt="">
+            </div>
+
+        </div>
+
+        <div class="humidity_info">
+
+
+            <h3>Humidity Index is <span id="humidity" style="color: #15719f;"> 430</span></h3>
+            <span>The humidex is an index number used by Canadian meteorologists to describe how hot the weather feels
+                to the average person, by combining the effect of heat and humidity. </span>
+
+            <button>See Details</button>
+
+
+        </div>
+    </div>
+
+
+    <div class="two">
+
+        <div class="description">
+
+            <table>
+                <tr>
+                    <td><i class='fas fa-wind' style='font-size:30px'></i></td>
+                    <td>Pressure</td>
+                    <td id="pressure">1015</td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-eye" style="font-size:30px"></i></i></td>
+                    <td>Visibility</td>
+                    <td id="visibility">1015</td>
+                </tr>
+                <tr>
+                    <td><i class='fas fa-water' style='font-size:30px'></i></i></td>
+                    <td>Wind</td>
+                    <td id="wind">1015</td>
+                </tr>
+                <tr>
+                    <td><i class='fas fa-cloud-rain' style='font-size:30px'></i></i></td>
+                    <td>Min Temperature</td>
+                    <td id="min_temp">1015</td>
+                </tr>
+
+                <tr>
+                    <td><i class='fas fa-cloud-rain' style='font-size:30px'></i></i></td>
+                    <td>Max Temperature</td>
+                    <td id="max_temp">1015</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <div class="three" id="targetDiv">
+
+        <div class="description">
+
+            <div class="containers">
+
+                <div class="flex_container">
+                    <h2 id="date">Date</h2>
+                    <img src="https://developer.accuweather.com/sites/default/files/01-s.png" alt="" id="forecast_icon">
+                    <h3 class="day_temp">37</h3>
+                    <h3 class="night_temp">23</h3>
+                </div>
+                <div class="flex_container">
+                    <h2 id="date">Date</h2>
+                    <img src="https://developer.accuweather.com/sites/default/files/01-s.png" alt="" id="forecast_icon">
+                    <h3 class="day_temp">37</h3>
+                    <h3 class="night_temp">23</h3>
+                </div>
+                <div class="flex_container">
+                    <h2 id="date">Date</h2>
+                    <img src="https://developer.accuweather.com/sites/default/files/05-s.png" alt="" id="forecast_icon">
+                    <h3 class="day_temp">37</h3>
+                    <h3 class="night_temp">23</h3>
+                </div>
+                <div class="flex_container">
+                    <h2 id="date">Date</h2>
+                    <img src="https://developer.accuweather.com/sites/default/files/11-s.png" alt="" id="forecast_icon">
+                    <h3 class="day_temp">37</h3>
+                    <h3 class="night_temp">23</h3>
+                </div>
+                <div class="flex_container">
+                    <h2 id="date">Date</h2>
+                    <img src="https://developer.accuweather.com/sites/default/files/01-s.png" alt="" id="forecast_icon">
+                    <h3 class="day_temp">37</h3>
+                    <h3 class="night_temp">23</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!--16 days forecas-->
+    
+
+
+
+    <!--Footer-->
+
+    <div class="footer_content">
+        <footer>
+            <footer style="color: lightgrey; font-size: small;text-align: center;">
+                The Weather Channel website is an interactive and user-friendly web application designed to provide
+                real-time
+                weather information to users around the world. <br>This project was conceived with the goal of offering
+                a
+                seamless
+                and efficient way for people to access up-to-date weather forecasts for any location.
+
+            </footer>
+            <p style="margin-top: 20px;">© TOI</p>
+            <p class="icons_contact">Contact us at</p>
+            <div class="icons">
+                <i class="icon fa fa-twitter fa-lg"></i>
+                <i class="icon fa fa-facebook fa-lg"></i>
+                <i class="icon fa fa-linkedin fa-lg"></i>
+                <i class="icon fa fa-youtube-play fa-lg"></i>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
